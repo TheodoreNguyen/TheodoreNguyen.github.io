@@ -1,0 +1,106 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		B7EC275C1AD0C03800D7A8F8 /* Login.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Login.html; sourceTree = "<group>"; };
+		B7EC275F1AD0C33900D7A8F8 /* ratchet-theme-ios.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "ratchet-theme-ios.css"; sourceTree = "<group>"; };
+		B7EC27601AD0C35D00D7A8F8 /* StudentLogin.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = StudentLogin.html; sourceTree = "<group>"; };
+		B7EC27611AD0C38400D7A8F8 /* TutorLogin.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TutorLogin.html; sourceTree = "<group>"; };
+		B7EC27621AD0C38F00D7A8F8 /* StudentHome.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = StudentHome.html; sourceTree = "<group>"; };
+		B7EC27631AD0C39700D7A8F8 /* TutorHome.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TutorHome.html; sourceTree = "<group>"; };
+		B7EC27641AD0C3B200D7A8F8 /* StudentSubjectList.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = StudentSubjectList.html; sourceTree = "<group>"; };
+		B7EC27651AD0C3C000D7A8F8 /* TutorSubjectList.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TutorSubjectList.html; sourceTree = "<group>"; };
+		B7EC27691AD0C44500D7A8F8 /* SignUp.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = SignUp.html; sourceTree = "<group>"; };
+		B7EC276A1AD0C52100D7A8F8 /* AvailableTutors.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AvailableTutors.html; sourceTree = "<group>"; };
+		B7EC276E1AD0EF3A00D7A8F8 /* ratchet.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = ratchet.js; sourceTree = "<group>"; };
+		B7EC276F1AD10B3E00D7A8F8 /* TheodoreTutorProfile.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TheodoreTutorProfile.html; sourceTree = "<group>"; };
+		B7EC27701AD10E0C00D7A8F8 /* Notification.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Notification.html; sourceTree = "<group>"; };
+		B7EC27711AD113C500D7A8F8 /* StudentChat.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = StudentChat.html; sourceTree = "<group>"; };
+		B7EC27721AD1199700D7A8F8 /* StudentConfirmation.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = StudentConfirmation.html; sourceTree = "<group>"; };
+		B7EC27731AD11A9C00D7A8F8 /* studentconfirmcancel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = studentconfirmcancel.html; sourceTree = "<group>"; };
+		B7EC27751AD120D400D7A8F8 /* TutorChat.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TutorChat.html; sourceTree = "<group>"; };
+		B7EC27771AD1212500D7A8F8 /* TutorConfirmation.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TutorConfirmation.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B7EC27551AD0C01D00D7A8F8 = {
+			isa = PBXGroup;
+			children = (
+				B7EC27771AD1212500D7A8F8 /* TutorConfirmation.html */,
+				B7EC276E1AD0EF3A00D7A8F8 /* ratchet.js */,
+				B7EC276A1AD0C52100D7A8F8 /* AvailableTutors.html */,
+				B7EC276F1AD10B3E00D7A8F8 /* TheodoreTutorProfile.html */,
+				B7EC27711AD113C500D7A8F8 /* StudentChat.html */,
+				B7EC27731AD11A9C00D7A8F8 /* studentconfirmcancel.html */,
+				B7EC27721AD1199700D7A8F8 /* StudentConfirmation.html */,
+				B7EC27691AD0C44500D7A8F8 /* SignUp.html */,
+				B7EC275F1AD0C33900D7A8F8 /* ratchet-theme-ios.css */,
+				B7EC27601AD0C35D00D7A8F8 /* StudentLogin.html */,
+				B7EC27611AD0C38400D7A8F8 /* TutorLogin.html */,
+				B7EC27621AD0C38F00D7A8F8 /* StudentHome.html */,
+				B7EC27631AD0C39700D7A8F8 /* TutorHome.html */,
+				B7EC27641AD0C3B200D7A8F8 /* StudentSubjectList.html */,
+				B7EC27651AD0C3C000D7A8F8 /* TutorSubjectList.html */,
+				B7EC27701AD10E0C00D7A8F8 /* Notification.html */,
+				B7EC275C1AD0C03800D7A8F8 /* Login.html */,
+				B7EC27751AD120D400D7A8F8 /* TutorChat.html */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		B7EC27561AD0C01D00D7A8F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+			};
+			buildConfigurationList = B7EC27591AD0C01D00D7A8F8 /* Build configuration list for PBXProject "TutorU V1.2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7EC27551AD0C01D00D7A8F8;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		B7EC275A1AD0C01D00D7A8F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B7EC275B1AD0C01D00D7A8F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7EC27591AD0C01D00D7A8F8 /* Build configuration list for PBXProject "TutorU V1.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7EC275A1AD0C01D00D7A8F8 /* Debug */,
+				B7EC275B1AD0C01D00D7A8F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7EC27561AD0C01D00D7A8F8 /* Project object */;
+}

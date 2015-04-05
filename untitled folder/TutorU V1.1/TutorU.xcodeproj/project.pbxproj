@@ -1,0 +1,84 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		FF545CD41AD0691200A6C6BA /* Login.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Login.html; sourceTree = "<group>"; };
+		FF545CD51AD07D2900A6C6BA /* StudentLogin.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = StudentLogin.html; sourceTree = "<group>"; };
+		FF545CD61AD07F1B00A6C6BA /* TutorLogin.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TutorLogin.html; sourceTree = "<group>"; };
+		FF545CD71AD07FA400A6C6BA /* SignUp.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = SignUp.html; sourceTree = "<group>"; };
+		FF545CD91AD0969600A6C6BA /* StudentSubjectList.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = StudentSubjectList.html; sourceTree = "<group>"; };
+		FF545D711AD09F4300A6C6BA /* ratchet-theme-ios.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = "ratchet-theme-ios.css"; sourceTree = "<group>"; };
+		FF545D721AD0A44800A6C6BA /* StudentHome.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = StudentHome.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		FF545CCD1AD068DD00A6C6BA = {
+			isa = PBXGroup;
+			children = (
+				FF545CD91AD0969600A6C6BA /* StudentSubjectList.html */,
+				FF545CD71AD07FA400A6C6BA /* SignUp.html */,
+				FF545CD61AD07F1B00A6C6BA /* TutorLogin.html */,
+				FF545CD51AD07D2900A6C6BA /* StudentLogin.html */,
+				FF545CD41AD0691200A6C6BA /* Login.html */,
+				FF545D721AD0A44800A6C6BA /* StudentHome.html */,
+				FF545D711AD09F4300A6C6BA /* ratchet-theme-ios.css */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		FF545CCE1AD068DD00A6C6BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = FF545CD11AD068DD00A6C6BA /* Build configuration list for PBXProject "TutorU" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF545CCD1AD068DD00A6C6BA;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		FF545CD21AD068DD00A6C6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FF545CD31AD068DD00A6C6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF545CD11AD068DD00A6C6BA /* Build configuration list for PBXProject "TutorU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF545CD21AD068DD00A6C6BA /* Debug */,
+				FF545CD31AD068DD00A6C6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF545CCE1AD068DD00A6C6BA /* Project object */;
+}
