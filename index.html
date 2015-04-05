@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A Colorful Website for Test Only, reference </title>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+
+  <!-- Firechat -->
+  <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css" />
+  <script src="https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js"></script>
+  
+  <!-- Firebase Simple Login -->
+  
+</head>
+<body>
+ <!---------------- Setup Facebook SDK ---------------->
+<script type="text/javascript">
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '704226993032944',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+ <!---------------- Login using FireChat ------------>
+  <script type='text/javascript'>
+      var ref = new Firebase("https://glowing-torch-4513.firebaseapp.com/chat");
+      ref.onAuth(function(authData) {
+        // Once authenticated, instantiate Firechat with our user id and user name
+        if (authData) {
+          var chat = new FirechatUI(ref, document.getElementById('firechat-wrapper'));
+          chat.setUser(authData.uid, authData[authData.provider].displayName);
+        }
+      });
+      function login('facebook') {
+	    ref.authWithOAuthPopup('facebook', function(error, authData) {
+	      remember: "sessionOnly",
+          scope: "email,user_likes"
+          if (error) {
+             console.log("Login Failed!", error);
+          } else {
+             console.log("Authenticated successfully with payload:", authData);
+          }
+          console.log("ID:", authData.uid);
+        });
+
+    // Set(), write into database 
+    var wref = new Firebase("https://glowing-torch-4513.firebaseio.com/web/saving-data/fireblog");
+    wref.child("alanisawesome").set({
+    date_of_birth: "June 23, 1912",
+    full_name: "Alan Turing"
+   });
+    wref.child("gracehop").set({
+    date_of_birth: "December 9, 1906",
+    full_name: "Grace Hopper"
+   });
+    
+    var usersRef = wref.child("users");
+	ref.set({
+  		alanisawesome: {
+    	date_of_birth: "June 23, 1912",
+    	full_name: "Alan Turing"
+ 	 },
+  	gracehop: {
+    	date_of_birth: "December 9, 1906",
+    	full_name: "Grace Hopper"
+ 	 }
+ });
+
+    //updating saved data
+    var hopperRef = usersRef.child("gracehop");
+    hopperRef.update({
+    	"nickname": "Amazing Grace"
+	});
+	
+	dataRef.set("I'm writing data", function(error) {
+  	  if (error) {
+    	alert("Data could not be saved." + error);
+  	  } else {
+    	alert("Data saved successfully.");
+      }
+    });
+</script>  
+ <!-------------Initiliaze the chat------------->
+ <script type="text/javascript">
+	 function initChat(authData) {
+       var chat = new FirechatUI(chatRef, document.getElementById('firechat-wrapper'));
+       chat.setUser(authData.uid, authData[authData.provider].displayName);
+     }
+ </script>
+
+    <div id="firechat-wrapper">
+      <a href='https://google.com' onclick='login("facebook");'>Login</a>
+    </div>
+    <div
+ 	 class="fb-like"
+     data-share="true"
+     data-width="450"
+     data-show-faces="true">
+    </div>
+
+    <div id = "comments">
+    	<div class= "comment" ng-repeat="comment in comments">
+    	  <span><b>{{comment.from}}:</b><br/>{{comment.body}}</span>
+    	</div>
+    </div>
+    <div id = "textWrap">
+    </div>
+ <!------------------ Original HTML -------------->
+  <h1 style="color: #07F">A Colorful Website</h1>
+  <p>This is a website about color!</p>    
+  
+  <h2 style="color: #C00">News</h2>
+  <ul>
+    <li><a href="news-1.html">Blue Is The New Hue</a></li>
+    <li><a href="rainbow.html">Our New Rainbow</a></li>
+    <li><a href="news-2.html">A Red Rebellion</a></li>
+  </ul>
+  <h2>Navigation</h2>
+  <ul>
+    <li>
+      <a href="about/index.html">About Us</a>
+   </li>
+    <li style="color: #C00">
+      <a href="red.html">The Red Page</a>
+    </li>
+    <li style="color: #F90">
+      <a href="orange.html">The Orange Page</a>
+    </li>
+    <li style="color: #FF0">
+      <a href="yellow.html">The Yellow Page</a>
+    </li>
+    <li style="color: #0C0">
+      <a href="green.html">The Green Page</a>
+    </li>
+    <li style="color: #00F">
+      <a href="blue.html">The Blue Page</a>
+    </li>
+    <li>
+      <a href="rainbow.html">The Rainbow Page</a>
+    </li>
+</ul>
+</body>
+</html>
+
