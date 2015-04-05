@@ -6,21 +6,21 @@
   <meta charset="utf-8" />
   <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
   <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
 
   <!-- Firebase -->
-  <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.0.2/firebase.js'></script>
 
   <!-- Firechat -->
-  <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css" />
-  <script src="https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js"></script>
+  <link rel='stylesheet' href='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css' />
+  <script src='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js'></script>
   
   <!-- Firebase Simple Login -->
   
 </head>
 <body>
  <!---------------- Setup Facebook SDK ---------------->
-<script type="text/javascript">
+<script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '704226993032944',
@@ -59,53 +59,17 @@
           }
           console.log("ID:", authData.uid);
         });
-
-    // Set(), write into database 
-    var wref = new Firebase("https://glowing-torch-4513.firebaseio.com/web/saving-data/fireblog");
-    wref.child("alanisawesome").set({
-    date_of_birth: "June 23, 1912",
-    full_name: "Alan Turing"
-   });
-    wref.child("gracehop").set({
-    date_of_birth: "December 9, 1906",
-    full_name: "Grace Hopper"
-   });
-    
-    var usersRef = wref.child("users");
-	ref.set({
-  		alanisawesome: {
-    	date_of_birth: "June 23, 1912",
-    	full_name: "Alan Turing"
- 	 },
-  	gracehop: {
-    	date_of_birth: "December 9, 1906",
-    	full_name: "Grace Hopper"
- 	 }
- });
-
-    //updating saved data
-    var hopperRef = usersRef.child("gracehop");
-    hopperRef.update({
-    	"nickname": "Amazing Grace"
-	});
-	
-	dataRef.set("I'm writing data", function(error) {
-  	  if (error) {
-    	alert("Data could not be saved." + error);
-  	  } else {
-    	alert("Data saved successfully.");
-      }
-    });
-</script>  
+ </script> 
+ 
  <!-------------Initiliaze the chat------------->
- <script type="text/javascript">
+ <script>
 	 function initChat(authData) {
        var chat = new FirechatUI(chatRef, document.getElementById('firechat-wrapper'));
        chat.setUser(authData.uid, authData[authData.provider].displayName);
      }
  </script>
 
-    <div id="firechat-wrapper">
+    <div id='firechat-wrapper'>
       <a href='https://google.com' onclick='login("facebook");'>Login</a>
     </div>
     <div
@@ -115,13 +79,6 @@
      data-show-faces="true">
     </div>
 
-    <div id = "comments">
-    	<div class= "comment" ng-repeat="comment in comments">
-    	  <span><b>{{comment.from}}:</b><br/>{{comment.body}}</span>
-    	</div>
-    </div>
-    <div id = "textWrap">
-    </div>
  <!------------------ Original HTML -------------->
   <h1 style="color: #07F">A Colorful Website</h1>
   <p>This is a website about color!</p>    
